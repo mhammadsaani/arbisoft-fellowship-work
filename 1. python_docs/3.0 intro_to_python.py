@@ -17,7 +17,7 @@
 
 ## if expression have floats and integers, then they all are treated as floats and operations are performed
 
-# expression = 2 * (9.2 * 4)
+# expression = 2 * (9.2 * 5)
 # print(expression)
 
 ### Strings 
@@ -28,11 +28,11 @@
 # print(text)
 
 # text = (
-#         'a quick brown fox'
-#         'jumps over the lazy dog'
-#         )
+# #         'a quick brown fox'
+# #         'jumps over the lazy dog'
+# #         )
 
-# print(text)
+# # print(text)
 
 ### Lists
 

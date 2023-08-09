@@ -3,7 +3,7 @@
 ### to loop over a copy of the collection or to create a new collection:
 
 # users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}
-# for user, status in users.copy().items():
+# for user, status in users.items():
 #     if status == 'inactive':
 #         del users[user]
         
@@ -172,9 +172,79 @@ _range = range(5)
 
 
 # def temp(value, L=[]):
+#     print(L)
 #     L.append(value)
+    
 
 # temp(1)
 # temp(2)
 
-## keyword arguments  vs positional arguments
+## positional arguments vs keyword arguments
+
+# def pos_key(positional1, positional2, /, pos_or_keyword, *, kwd1, kwd2):
+#     print(positional1, positional2, pos_or_keyword, kwd1, kwd2)
+    
+# pos_key('I am positional one', "I am positional two", 
+#         pos_or_keyword='I am keyword for now but can be positional', 
+#         kwd1="keyword1", kwd2="Keyword2")
+
+# pos_key('I am positional one', "I am positional two", 
+#         pos_or_keyword='I am keyword for now but can be positional', 
+#         kwd1="keyword1", kwd2="Keyword2")
+
+
+## * (n positional) vs ** (n keyword arguments) in arguments
+
+# def add_n_numbers(*numbers):
+#     return sum(numbers)
+    
+# print(add_n_numbers(10, 20, 30))
+# print(add_n_numbers(10, 20, 30, 40, 50))
+
+
+# def bscs_outline(**subjects):
+#     for subject, semester in subjects.items():
+#         print(subject, "-> ", semester)
+
+
+# bscs_outline( intro_to_cs='semester 1', oop='semester2')
+# bscs_outline( intro_to_cs='semester 1', oop='semester2', data_structure='semester3')
+
+
+### Lambda Functions
+
+
+
+# temp = (lambda x, y: x + y) 
+# print(temp(4, 10))
+
+## mostly used with high order functions
+
+# numbers = [1, 2, 3, 4, 5]
+# squared = map(lambda x: x ** 2, numbers)
+# print(list(squared))
+
+## lambda functions are just syntactic sugar
+
+
+### document string
+
+# def add_function(*numbers):
+#     """Adding n numbers.
+    
+#     This function takes n positional arguemnts and return the sum.
+#     """
+#     return sum(numbers)
+
+
+# add_function(1, 2, 3)
+    
+
+
+### Function Annotations
+
+def add(a: int, b: int) -> int:
+    return a + b
+
+print(add(2, 3))
+

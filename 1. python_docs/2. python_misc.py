@@ -2,7 +2,7 @@
 
 ## Underscore _ in interactive mode
 
-##  -c and -m flags (some modules are useful as scripts like http.server)
+##  -c and -m flags (some modules are useful as scripts)
 
 ## i flag can be used to enter in module interactive mode after script has been executed
 
