@@ -31,7 +31,7 @@ info = {
 # print("My name is {0[name]:s} and I am from {0[department]:s} department with cgpa more than {0[cgpa]:d}".format(info))
 
 
-## reading a file 
+# reading a file 
 # with open('1. python_docs/temp.txt', 'r') as file:
 #         contents = file.read()
 #         print(contents)
@@ -45,7 +45,16 @@ info = {
 
 ## appending
 # with open('1. python_docs/temp2.txt', 'a') as file:
-#         file.write(' appending contents')
+#         file.write(' appended content')
+
+
+## reading and writing
+# with open('read_writing.txt', 'r+') as file:
+#         contents = file.read()
+#         print(contents)
+#         new_contents = '\nHere is the new content for read and write file'
+#         file.write(new_contents)
+
 
 
 import json 
@@ -64,3 +73,27 @@ _list = [1, 2, 3]
 
 # with open('1. python_docs/temp.txt', 'r') as file:
 #         print(json.load(file))
+
+
+
+# with open('test2.txt', 'a') as file:
+#     file.write(' Programming is Fun.')
+
+## readline()
+# with open('line.txt', 'r') as file:
+#         line1 = file.readline()
+#         line2 = file.readline()
+#         print(line1, line2)
+
+## readlines() -> returns a list of all lines
+# with open('line.txt', 'r') as file:
+#         all_lines = file.readlines()
+#         print(all_lines)
+
+# with open('workfile', 'wb') as file:
+        # file.write(b'abcdefghijkl')
+
+# with open('workfile', 'r') as file:
+#         current_byte = file.read(5)
+#         print(current_byte)
+        

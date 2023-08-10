@@ -1,0 +1,2 @@
+You can read and write on me
+Here is the new content for read and write file
